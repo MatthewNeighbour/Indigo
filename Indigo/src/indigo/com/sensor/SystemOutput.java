@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class SystemOutput
 {
     private Scanner scan = new Scanner(System.in);
+    //reads last string and sends it as "input"
     public String getOutput()
     {
         return scan.next();

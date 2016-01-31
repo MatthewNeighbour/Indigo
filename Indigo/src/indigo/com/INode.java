@@ -9,15 +9,7 @@ package indigo.com;
  *
  * @author Matt
  */
-public class Indigo
+public interface INode
 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
-    {
-        Window window = new Window();
-    }
-    
+    public void process();
 }
