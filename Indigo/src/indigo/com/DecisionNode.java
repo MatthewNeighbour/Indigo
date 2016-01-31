@@ -20,6 +20,10 @@ public class DecisionNode implements INode
     {
         y = yNode;
         n = nNode;
+        if(true)
+        {
+            
+        }
     }
 
     DecisionNode()
