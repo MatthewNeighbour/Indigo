@@ -9,7 +9,7 @@ package indigo.com;
  *
  * @author Matt
  */
-public interface INode
+public class Human
 {
-    public void process();
+    
 }

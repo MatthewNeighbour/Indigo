@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  *
  * @author Matt
  */
-public class IPCamera
+public class IPCamera implements Sensor
 {
     private String ipAddress = null;
     private URL url = null;
@@ -35,5 +35,23 @@ public class IPCamera
     public BufferedImage getBufferedImage() throws IOException
     {
         return ImageIO.read(url);
+    }
+
+    @Override
+    public void setAddress(URL newUrl)
+    {
+        this.url = newUrl;
+    }
+
+    @Override
+    public URL getAddress()
+    {
+        return this.url;
+    }
+
+    @Override
+    public String getData()
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

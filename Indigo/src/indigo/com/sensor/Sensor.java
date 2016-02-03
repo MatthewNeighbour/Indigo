@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package indigo.com;
+package indigo.com.sensor;
+
+import java.net.URL;
 
 /**
  *
  * @author Matt
  */
-public class RunNode implements INode
+public interface Sensor
 {
-    @Override
-    public void process()
-    {
-        
-    }
+    public void setAddress(URL url);
+    public URL getAddress();
+    public String getData();
 }
